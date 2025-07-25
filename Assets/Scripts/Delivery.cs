@@ -15,6 +15,7 @@ public class Delivery : MonoBehaviour
             Debug.Log("Package has been picked up!");
             hasPackage = true;
         }
+
         if (collision.tag == "Customer" && hasPackage)
         {
             Debug.Log("Package has been delivered!");
